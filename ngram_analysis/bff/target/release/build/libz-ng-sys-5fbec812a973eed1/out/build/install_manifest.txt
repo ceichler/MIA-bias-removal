@@ -1,0 +1,5 @@
+/home/nach_linux/cp_serveur/llm-mia/bff/target/release/build/libz-ng-sys-5fbec812a973eed1/out/lib/libz-ng.a
+/home/nach_linux/cp_serveur/llm-mia/bff/target/release/build/libz-ng-sys-5fbec812a973eed1/out/include/zlib-ng.h
+/home/nach_linux/cp_serveur/llm-mia/bff/target/release/build/libz-ng-sys-5fbec812a973eed1/out/include/zlib_name_mangling-ng.h
+/home/nach_linux/cp_serveur/llm-mia/bff/target/release/build/libz-ng-sys-5fbec812a973eed1/out/include/zconf-ng.h
+/home/nach_linux/cp_serveur/llm-mia/bff/target/release/build/libz-ng-sys-5fbec812a973eed1/out/lib/pkgconfig/zlib-ng.pc

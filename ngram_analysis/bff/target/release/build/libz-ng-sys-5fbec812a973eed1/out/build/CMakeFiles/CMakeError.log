@@ -1,0 +1,58 @@
+Determining if the include file sys/sdt.h exists failed with the following output:
+Change Dir: /home/nach_linux/cp_serveur/llm-mia/bff/target/release/build/libz-ng-sys-5fbec812a973eed1/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b6c17/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b6c17.dir/build.make CMakeFiles/cmTC_b6c17.dir/build
+gmake[1]: Entering directory '/home/nach_linux/cp_serveur/llm-mia/bff/target/release/build/libz-ng-sys-5fbec812a973eed1/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b6c17.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -ffunction-sections -fdata-sections -fPIC -m64  -std=c11 -o CMakeFiles/cmTC_b6c17.dir/CheckIncludeFile.c.o -c /home/nach_linux/cp_serveur/llm-mia/bff/target/release/build/libz-ng-sys-5fbec812a973eed1/out/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/nach_linux/cp_serveur/llm-mia/bff/target/release/build/libz-ng-sys-5fbec812a973eed1/out/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: sys/sdt.h: No such file or directory
+    1 | #include <sys/sdt.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_b6c17.dir/build.make:78: CMakeFiles/cmTC_b6c17.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: Leaving directory '/home/nach_linux/cp_serveur/llm-mia/bff/target/release/build/libz-ng-sys-5fbec812a973eed1/out/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_b6c17/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test HAVE_VPCLMULQDQ_INTRIN failed with the following output:
+Change Dir: /home/nach_linux/cp_serveur/llm-mia/bff/target/release/build/libz-ng-sys-5fbec812a973eed1/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d5dfb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d5dfb.dir/build.make CMakeFiles/cmTC_d5dfb.dir/build
+gmake[1]: Entering directory '/home/nach_linux/cp_serveur/llm-mia/bff/target/release/build/libz-ng-sys-5fbec812a973eed1/out/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d5dfb.dir/src.c.o
+/usr/bin/cc -DHAVE_VPCLMULQDQ_INTRIN  -ffunction-sections -fdata-sections -fPIC -m64 -mvpclmulqdq -std=c11 -o CMakeFiles/cmTC_d5dfb.dir/src.c.o -c /home/nach_linux/cp_serveur/llm-mia/bff/target/release/build/libz-ng-sys-5fbec812a973eed1/out/build/CMakeFiles/CMakeTmp/src.c
+/home/nach_linux/cp_serveur/llm-mia/bff/target/release/build/libz-ng-sys-5fbec812a973eed1/out/build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/nach_linux/cp_serveur/llm-mia/bff/target/release/build/libz-ng-sys-5fbec812a973eed1/out/build/CMakeFiles/CMakeTmp/src.c:3:25: warning: AVX512F vector return without AVX512F enabled changes the ABI [-Wpsabi]
+    3 |                 __m512i a = _mm512_setzero_si512();
+      |                         ^
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/include/immintrin.h:49,
+                 from /home/nach_linux/cp_serveur/llm-mia/bff/target/release/build/libz-ng-sys-5fbec812a973eed1/out/build/CMakeFiles/CMakeTmp/src.c:1:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512fintrin.h:334:1: error: inlining failed in call to ‘always_inline’ ‘_mm512_setzero_si512’: target specific option mismatch
+  334 | _mm512_setzero_si512 (void)
+      | ^~~~~~~~~~~~~~~~~~~~
+/home/nach_linux/cp_serveur/llm-mia/bff/target/release/build/libz-ng-sys-5fbec812a973eed1/out/build/CMakeFiles/CMakeTmp/src.c:4:29: note: called from here
+    4 |                 __m512i b = _mm512_setzero_si512();
+      |                             ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/lib/gcc/x86_64-linux-gnu/11/include/immintrin.h:49,
+                 from /home/nach_linux/cp_serveur/llm-mia/bff/target/release/build/libz-ng-sys-5fbec812a973eed1/out/build/CMakeFiles/CMakeTmp/src.c:1:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512fintrin.h:334:1: error: inlining failed in call to ‘always_inline’ ‘_mm512_setzero_si512’: target specific option mismatch
+  334 | _mm512_setzero_si512 (void)
+      | ^~~~~~~~~~~~~~~~~~~~
+/home/nach_linux/cp_serveur/llm-mia/bff/target/release/build/libz-ng-sys-5fbec812a973eed1/out/build/CMakeFiles/CMakeTmp/src.c:3:29: note: called from here
+    3 |                 __m512i a = _mm512_setzero_si512();
+      |                             ^~~~~~~~~~~~~~~~~~~~~~
+gmake[1]: *** [CMakeFiles/cmTC_d5dfb.dir/build.make:78: CMakeFiles/cmTC_d5dfb.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/nach_linux/cp_serveur/llm-mia/bff/target/release/build/libz-ng-sys-5fbec812a973eed1/out/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_d5dfb/fast] Error 2
+
+
+Source file was:
+#include <immintrin.h>
+            int main(void) {
+                __m512i a = _mm512_setzero_si512();
+                __m512i b = _mm512_setzero_si512();
+                __m512i c = _mm512_clmulepi64_epi128(a, b, 0x10);
+                (void)c;
+                return 0;
+            }
